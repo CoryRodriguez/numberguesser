@@ -1,6 +1,7 @@
 const guess = document.querySelector("#guess");
 const submit = document.querySelector("#submit").addEventListener("click", answer);
 const randomNumber = getRandomInt(11);
+const showAnswer = document.querySelector("#showAnswer");
 
 // Generate Random Number
 function getRandomInt(max) {
@@ -27,7 +28,7 @@ function correctAnswer() {
   const content = document.createTextNode(randomNumber + " is correct!") // randomNumber + " is correct!"
   const addP = newP.appendChild(content);
   //container.appendChild(newP);
-  //document.body.insertBefore(newP, container);
+  document.body.insertBefore(newP, container);
   console.log('yup');
 }
 
