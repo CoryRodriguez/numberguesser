@@ -28,7 +28,6 @@ function answer(e){
       empty();
   } else {
     wrongNumber();
-    console.log("try again");
   }
 
   e.preventDefault();
@@ -61,8 +60,6 @@ function correctAnswer() {
 
   // Disable the input
   guess.disabled = true;
-
-  console.log('yup');
 }
 
 function setMessage(msg) {
@@ -83,10 +80,6 @@ function empty() {
   guess.className = 'form-control is-invalid';
   //game.appendChild(newP);
 
-  //submit.textContent = "Play Again";
-
-
-  console.log('yup');
 }
 
 // Wrong number
@@ -119,6 +112,3 @@ function empty() {
     submitBtn.value = 'Play Again?';
     submitBtn.className += ' play-again';
   }
-
-
-console.log(randomNumber);
