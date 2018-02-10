@@ -36,23 +36,6 @@ function answer(e){
 
 // If correct answer was guessed
 function correctAnswer() {
-  // Create p element
-  // const game = document.getElementById("game");
-  // const newP = document.createElement('p');
-  // const addP = newP.appendChild(content);
-  //const content = document.createTextNode(`${randomNumber} is correct!`) // randomNumber + " is correct!"
-  //const content = document.createTextNode(`${randomNumber} is correct!`) // randomNumber + " is correct!"
-
-
-  // Fill p element
-  //message.textContent = content;
-
-  //newP.className = 'text-success';
-
-  //game.appendChild(newP);
-
-  //submit.textContent = "Play Again";
-
 
   setMessage(`${randomNumber} is correct, YOU WIN!`);
   message.className = 'text-success';
@@ -68,11 +51,7 @@ function setMessage(msg) {
 
 // If empty, under 1 or over 10 
 function empty() {
-  // Create p element
-  // const game = document.getElementById("game");
-  // const newP = document.createElement('p');
-  // const content = document.createTextNode("Please enter a valid number!") // randomNumber + " is correct!"
-  // const addP = newP.appendChild(content);
+
   setMessage(`Please enter a valid number!`);
 
   //newP.className = 'text-danger';
