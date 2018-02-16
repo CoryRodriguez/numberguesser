@@ -16,6 +16,8 @@ function getRandomInt(max) {
   game.addEventListener('mousedown', function(e){
     if(e.target.value === 'Play Again?'){
       window.location.reload();
+
+      // Change values here
     }
   })
 
