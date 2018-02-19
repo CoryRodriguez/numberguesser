@@ -21,7 +21,7 @@ function getRandomInt(max) {
       submitBtn.value = 'Submit';
       guessesLeft = 3;
       guess.disabled = false;
-      guess.classList.remove("is-invalid");
+      guess.classList = "form-control";
       guess.value = '';      
       message.innerHTML = '';
     }
@@ -97,5 +97,5 @@ function empty() {
   // Play again
   function playAgain(){
     submitBtn.value = 'Play Again?';
-    submitBtn.className += ' play-again';
+    //submitBtn.className += ' play-again';
   }
