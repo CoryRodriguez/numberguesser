@@ -15,9 +15,15 @@ function getRandomInt(max) {
 // Play again event listener
   game.addEventListener('mousedown', function(e){
     if(e.target.value === 'Play Again?'){
-      window.location.reload();
+      // window.location.reload();
 
       // Change values here
+      submitBtn.value = 'Submit';
+      guessesLeft = 3;
+      guess.disabled = false;
+      guess.classList.remove("is-invalid");
+      guess.value = '';      
+      message.innerHTML = '';
     }
   })
 
